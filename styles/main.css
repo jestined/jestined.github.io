@@ -10,6 +10,15 @@ body {
     background-color: black;
 }
 
+#contentBox {
+    background-color: black;
+    width: 98%;
+	max-width: 1080px;
+	margin: 0px auto 0px auto;
+	border: 6px double #006c94;
+	border-radius: 10px;
+}
+
 h1 {
     font-family: "Lucida Console", "Courier New", monospace;
     padding: .25em;
@@ -18,7 +27,7 @@ h3 {
     font-family: "Lucida Console", "Courier New", monospace;
     padding-left: 1em;
     padding-bottom: 1em;
-    border-bottom: 3px solid #00bbff;
+    border-bottom: 3px solid #006c94;
 }
 
 main section {
@@ -28,7 +37,8 @@ main section {
 }
 main section article {
     text-align: left;
-    margin-left: 2em;
+    padding-top: .5em;
+    margin-left: .5em;
 }
 main section h2 {
     padding-bottom: .35em;
@@ -45,28 +55,34 @@ main section li {
     padding-bottom: .25em;
 }
 
+.nav_menu {
+	width: 100%;
+}
 .nav_menu ul {
-    width: 160px;
-    padding-left: .5em;
-    padding-right: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-family: "Monaco", "Courier New", monospace;
-    font-size: 150%;
-    border-right: 3px solid #00bbff;
-    border-bottom: 3px solid #00bbff;
-    float: left;
-    margin-right: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.nav_menu ul li {
+	width: 50%;
 }
 .nav_menu li {
-    color: white;
+	float: left;
 }
 .nav_menu li a {
 	display: block;
 	width: 100%;
+	text-align: center;
+	padding-top: .25em;
+	padding-bottom: .25em;
+    margin-bottom: .5em;
 	text-decoration: none;
+    font-family: "Monaco", "Courier New", monospace;
 	color: white;
 	font-weight: bold;
+    border-bottom: 3px solid #006c94;
+    border-right: 2px solid #006c94;
 }
 
 .current {
