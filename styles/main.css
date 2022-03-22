@@ -6,12 +6,69 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    background-color: gray;
+    color: #00bbff;
+    background-color: black;
 }
 
 h1 {
     font-family: "Lucida Console", "Courier New", monospace;
+    padding: .25em;
 }
 h3 {
     font-family: "Lucida Console", "Courier New", monospace;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    border-bottom: 3px solid #00bbff;
+}
+
+main section {
+    width: 75%;
+    text-align: center;
+    padding: 1em;
+}
+main section article {
+    text-align: left;
+    margin-left: 2em;
+}
+main section h2 {
+    padding-bottom: .35em;
+    text-decoration: underline dotted;
+}
+main section p {
+    padding-bottom: .25em;
+}
+main section a {
+    color: white;
+    text-decoration: none;
+}
+main section li {
+    padding-bottom: .25em;
+}
+
+.nav_menu ul {
+    width: 160px;
+    padding-left: .5em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Monaco", "Courier New", monospace;
+    font-size: 150%;
+    border-right: 3px solid #00bbff;
+    border-bottom: 3px solid #00bbff;
+    float: left;
+    margin-right: 1em;
+}
+.nav_menu li {
+    color: white;
+}
+.nav_menu li a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.current {
+    color: red;
 }
