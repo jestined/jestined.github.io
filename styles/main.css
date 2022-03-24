@@ -9,7 +9,7 @@ body {
     color: #00bbff;
     background-color: black;
     width: 98%;
-	max-width: 1080px;
+	max-width: 1600px;
 	margin: 0px auto 0px auto;
 	border: 6px double #006c94;
 	border-radius: 10px;
@@ -36,10 +36,7 @@ main section article {
     padding-top: .5em;
     margin-left: .5em;
 }
-main section h2 {
-    padding-bottom: .35em;
-    text-decoration: underline dotted;
-}
+
 main section p {
     padding-bottom: .25em;
 }
@@ -83,4 +80,35 @@ main section li {
 
 .current {
     color: limegreen;
+}
+
+@media only screen and (max-width: 959px) {
+    header {
+        text-align: center;
+    }
+	h1 {
+		font-size: 90%;
+	}
+	h2 {
+		font-size: 90%;
+	}
+	h3 {
+		font-size: 90%;
+        padding: 0;
+	}
+    .nav_menu li {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	header {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
 }

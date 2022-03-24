@@ -9,7 +9,7 @@ body {
     color: #00bbff;
     background-color: black;
     width: 98%;
-	max-width: 1080px;
+	max-width: 1600px;
 	margin: 0px auto 0px auto;
 	border: 6px double #006c94;
 	border-radius: 10px;
@@ -25,36 +25,24 @@ h3 {
     padding-bottom: 1em;
     border-bottom: 3px solid #006c94;
 }
-
-main section {
-    width: 75%;
-    text-align: center;
-    padding: 1em;
-}
-main section article {
+article {
     text-align: left;
-    padding-top: .5em;
-    margin-left: .5em;
+    padding: .5em;
 }
-main section h2 {
-    padding-bottom: .35em;
-    text-decoration: underline dotted;
+article h2 {
+    text-align: center;
 }
-main section p {
-    padding-bottom: .25em;
-}
-main section a {
-    color: white;
-    text-decoration: none;
-}
-main section li {
-    padding-bottom: .25em;
-}
-
 article img {
-    max-width: 65%;
+    max-width: 100%;
+    border: 2px solid #006c94;
 }
-
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    padding: 5px;
+}
 .nav_menu {
 	width: 100%;
 }
@@ -87,4 +75,37 @@ article img {
 
 .current {
     color: limegreen;
+}
+
+/* Mobile Compatibility */
+
+@media only screen and (max-width: 959px) {
+    header {
+        text-align: center;
+    }
+	h1 {
+		font-size: 90%;
+	}
+	h2 {
+		font-size: 90%;
+	}
+	h3 {
+		font-size: 90%;
+        padding: 0;
+	}
+    .nav_menu li {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	header {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
 }
