@@ -51,6 +51,10 @@ main section li {
     padding-bottom: .25em;
 }
 
+article img {
+    max-width: 65%;
+}
+
 .nav_menu {
 	width: 100%;
 }
